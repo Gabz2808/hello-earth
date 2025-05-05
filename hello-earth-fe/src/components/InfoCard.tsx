@@ -6,6 +6,11 @@ interface InfoCardProps {
     description: string;
 }
 
+interface Currency {
+  name: string;
+  symbol: string;
+}
+
 export default function InfoCard({ country, usdValue, description }: InfoCardProps) {
     const currencies = country.currencies ? Object.values(country.currencies) : [];
     const languages = country.languages ? Object.values(country.languages) : [];
