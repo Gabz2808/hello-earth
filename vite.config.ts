@@ -4,9 +4,8 @@ import tailwindcss from '@tailwindcss/vite'
 
 
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: '/hello-earth-fe/', // ¡IMPORTANTE! usa el nombre de tu repo
+  base: '/hello-earth/',
 
   plugins: [
     tailwindcss(),
