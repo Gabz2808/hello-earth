@@ -1,0 +1,6 @@
+/* src/styles/infocard.css */
+@tailwind components;
+
+.info-card {
+  @apply flex flex-col items-center p-8 rounded-3xl shadow-xl border border-[#9CA3AF]/20 w-full max-w-lg transition-all duration-300 text-[#1F2937] bg-[#F3F4F6];
+}

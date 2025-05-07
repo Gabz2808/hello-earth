@@ -1,11 +1,13 @@
-// tailwind.config.js
 export default {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx,css}', // Incluye archivos CSS
+  ],
   theme: {
-    extend:{
-        fontFamily: {
-          sans: ['Sansation', 'sans-serif'],
-        }
+    extend: {
+      fontFamily: {
+        sans: ['Sansation', 'sans-serif'],
+      },
     },
   },
   plugins: [],

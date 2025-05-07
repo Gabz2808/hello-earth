@@ -1,5 +1,6 @@
 import { Country } from '../types/Country';
 
+
 interface InfoCardProps {
     country: Country;
     usdValue: number;
@@ -79,7 +80,7 @@ export default function InfoCard({ country, usdValue, description }: InfoCardPro
                         <span className="font-bold text-[#16A34A] drop-shadow-sm">${usdValue?.toFixed(2) ?? "N/A"}</span>
                     </li>
                     <li>
-                        <strong className="text-[#16A34A] drop-shadow-sm">Currency(s):</strong>
+                        <strong className="text-[#16A34A] drop-shadow-sm">Currency(s): </strong>
                         {currencies.length > 0 ? (
                             currencies.map((curr: Currency, index) => (
                                 <span key={index} className="text-[#1F2937]">
@@ -92,7 +93,7 @@ export default function InfoCard({ country, usdValue, description }: InfoCardPro
                         )}
                     </li>
                     <li>
-                        <strong className="text-[#16A34A] drop-shadow-sm">Language(s):</strong>
+                        <strong className="text-[#16A34A] drop-shadow-sm">Language(s): </strong>
                         <span className="text-[#1F2937]">{languages.length > 0 ? languages.join(", ") : "N/A"}</span>
                     </li>
                 </ul>

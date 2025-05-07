@@ -1,5 +1,11 @@
 
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './styles/infocard.css';
+
 @keyframes bgMovement {
   0% {
     background-position: 0% 50%;
